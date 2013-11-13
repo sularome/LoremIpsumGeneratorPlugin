@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+		<script src="oex_shim/operaextensions_popup.js"> </script> 
+		<title>Lorem ipsum generator</title> 
+		<link href="css/styles.css" rel="stylesheet" /> 
+		<script src="js/Utils.js"></script> 
+		<script src="popup.js"></script> 
+	</head> 
+	<body> 
+		<form action="" class="clearfix" id="filter_form"> 
+			<a href="https://github.com/sularome/LoremIpsumGeneratorPlugin" target="_blank"><img alt="" class="logo" src="icons/icon_31x31.png" /> </a>
+			<div class="filter_wrap">
+                <div class="holder"></div>
+                <ul>
+                	<li data-value="0" data-label="Paragraph">Paragraph</li>
+                	<li data-value="1" data-label="Words">Words</li>
+                	<li data-value="2" data-label="Text List">List
+                        <ul>
+                        	<li data-value="21" data-label="Single Word List">Single Word</li>
+                        	<li data-value="22" data-label="Few words List">Few words</li>
+                        	<li data-value="23" data-label="Sentence List">Sentence</li>
+                        	<li data-value="24" data-label="Text List">Text</li>
+                        </ul>
+                    </li>
+                </ul>
+			</div>
+			<input id="paragraph_count" min="1" name="paragraph_count" pattern="[0-9]{3}" type="number" value="3" />
+			<div id="start_lorem_wrap" title="Don't start with 'Lorem ipsum'">
+				<input id="start_lorem" name="start_lorem" type="checkbox" value="1" />
+			</div>
+			<div class="lang_wrap">
+                <div class="holder"></div>
+                <ul>
+                	<li data-value="default" data-label="LANG">Latin</li>
+                	<li data-value="en" data-label="EN">English</li>
+                	<li data-value="fr" data-label="FR">Français</li>
+                	<li data-value="bg" data-label="BG">Български</li>
+                </ul>
+			</div>
+			<button id="copy_btn_html" title="Copy to clipboard with html">+</button>
+			<button id="copy_btn" title="Copy to clipboard">Copy</button>
+		</form>
+		<div id="tooltip"></div>
+		<div id="content_wrap">
+			<div id="content"></div> 
+		</div> 
+        <div id="copy_holder"></div>
+	</body>
+</html>

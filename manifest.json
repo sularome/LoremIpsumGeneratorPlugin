@@ -1,0 +1,11 @@
+{
+	"name": "Lorem Ipsum Generator v.1.2",
+	"developer": {"name" : "Yordan Stoev", "url" : "http://yordanstoev.com/"},
+	"description" : "Generator of Lorem Ipsum text",
+	"manifest_version" : 2,
+	"version" : "1.2",
+	"background" : {"page" : "index.html"},
+	"icons" : {"128": "icons/icon_64x64.png"},
+	"browser_action" : {},
+	"permissions" : [ "clipboardRead", "clipboardWrite"]
+}
