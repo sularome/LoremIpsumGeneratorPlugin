@@ -7,5 +7,5 @@
 	"background" : {"page" : "index.html"},
 	"icons" : {"128": "icons/icon_64x64.png"},
 	"browser_action" : {},
-	"permissions" : [ "clipboardRead", "clipboardWrite"]
+	"permissions" : [ "clipboardRead", "clipboardWrite", "tabs", "webRequest", "contextMenus"]
 }
